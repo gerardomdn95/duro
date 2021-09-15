@@ -1,0 +1,10 @@
+@import '../../scss/index.scss';
+
+.navbar {
+  background-color: $navbar;
+  width: 100%;
+  height: 72px;
+  img {
+    margin-left: 50px;
+  }
+}

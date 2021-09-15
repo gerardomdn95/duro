@@ -1,11 +1,14 @@
 import React from 'react';
+import MainContainer from './containers/MainContainer';
+import Navbar from './shared/Navbar/Navbar';
 
 const App = () => {
   return (
-    <div>
-      <h1>Duro!</h1>
-    </div>
+    <React.Fragment>
+      <Navbar />
+      <MainContainer />
+    </React.Fragment>
   )
 }
 
-export default App
+export default App;

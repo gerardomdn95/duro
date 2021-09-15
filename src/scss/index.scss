@@ -1,0 +1,12 @@
+@import 'colors';
+@import 'mixins';
+@import 'fonts';
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: $main-background;
+}
