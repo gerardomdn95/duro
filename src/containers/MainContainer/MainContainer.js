@@ -11,7 +11,7 @@ const MainContainer = ({ data }) => {
   } = data;
   return (
     <main>
-      <ProductCard
+      { name && <ProductCard
         company={company}
         cpn={cpn}
         createdBy={createdBy}
@@ -21,8 +21,8 @@ const MainContainer = ({ data }) => {
         modified={modified}
         name={name}
         revision={revision}
-      />
-      <RelatedCard related={related} />
+      /> }
+      {related && <RelatedCard related={related} />}
     </main>
   )
 }
