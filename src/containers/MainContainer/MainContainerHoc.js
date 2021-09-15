@@ -7,7 +7,7 @@ const MainContainerHoc = ({data, AppLoad}) => {
 
   useEffect(() => AppLoad(), [AppLoad])
 
-  return <MainContainer data={data} />
+  return data !== {} && <MainContainer data={data} />
 }
 
 const mapStateToProps = state => ({

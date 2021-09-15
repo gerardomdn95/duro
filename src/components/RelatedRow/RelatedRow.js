@@ -2,20 +2,40 @@ import React from 'react';
 import './relatedRow.scss';
 import StatusChip from '../StatusChip';
 
-const RelatedRow = ({eid, name, created, status, company}) => {
+const RelatedRow = ({ eid, name, created, status, company }) => {
+  const countryCode = name.code.toUpperCase()
   return (
-    <>
-      <hr />
-      <section className="row-element">
-        <input type="checkbox" />
-        <p>{eid}</p>
-        <p>{name.name}</p>
-        <p>{created}</p>
-        <p>{company.name}</p>
+    <tr className="row-element">
+      <td>
+        <div className="row">
+          <input type="checkbox" />
+          <p>{eid}</p>
+        </div>
+      </td>
+      <td>
+        <div className="column">
+          <p>{name.name}</p>
+          <p className="secondary">Code: {countryCode}</p>
+        </div>
+      </td>
+      <td>
+        <p className="date">{created}</p>
+      </td>
+      <td>
+        <div className="column">
+          <p>{company.name}</p>
+          <p className="secondary">{company.profile}</p>
+        </div>
+      </td>
+      <td>
         <StatusChip status={status} />
-        <button>Action</button>
-      </section>
-    </>
+      </td>
+      <td>
+        <button>A</button>
+        <button>B</button>
+        <button>C</button>
+      </td>
+    </tr>
   )
 }
 

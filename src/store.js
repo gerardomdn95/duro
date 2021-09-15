@@ -1,17 +1,6 @@
 import { createStore } from 'redux';
 
-const initialState = {
-  name: '',
-  company: '',
-  description: '',
-  cpn: '',
-  eid: '',
-  revision: null,
-  created: '',
-  createdBy: '',
-  modified: '',
-  related: []
-}
+const initialState = {}
 
 const reducer = (state = initialState, action) => {
   if(action.type === 'APP_LOAD') {

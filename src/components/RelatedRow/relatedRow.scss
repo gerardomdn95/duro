@@ -1,10 +1,13 @@
 @import '../../scss/index.scss';
 
 .row-element {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  border: solid 5px red;
+  .secondary {
+    color: $gray-light;
+  }
+  .date {
+    color: $primary;
+  }
   & {
     input[type=checkbox] {
       border-radius: 6px;
@@ -19,6 +22,23 @@
       font-weight: 600;
       font-size: 14px;
       color: $secondary-font
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    button {
+      background: $checkbox;
+      border-radius: 6px;
+      color: $primary;
+      border: none;
+      margin: 5px
     }
   }
 }
