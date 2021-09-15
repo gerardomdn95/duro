@@ -1,0 +1,6 @@
+@import '../../scss/index.scss';
+
+.product-card {
+  @include card();
+  padding: 50px;
+}
