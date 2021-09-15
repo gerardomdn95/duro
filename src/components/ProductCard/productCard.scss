@@ -4,3 +4,44 @@
   @include card();
   padding: 50px;
 }
+
+.product-container {
+  display: flex;
+}
+
+.product-description {
+  & {
+    h1 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+    }
+    h3 {
+      font-style: normal;
+      font-weight: 600;
+    }
+    p {
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 21px;
+    }
+  }
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  & {
+    .legend {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 21px;
+    }
+    .value {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+      color: $gray-light;
+    }
+  }
+}
