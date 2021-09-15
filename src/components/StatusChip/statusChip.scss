@@ -1,0 +1,33 @@
+@mixin span() {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  padding: 5px;
+  width: 8%;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.approved {
+  @include span();
+  background: #EEE5FF;
+  color: #8950FC;
+}
+
+.success {
+  @include span();
+  background: #C9F7F5;
+  color: #1BC5BD;
+}
+
+.in-progress {
+  @include span();
+  background: #FFF4DE;
+  color: #FFA800;
+}
+
+.rejected {
+  @include span();
+  background: #FFE2E5;
+  color: #F64E60;
+}

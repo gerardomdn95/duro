@@ -1,5 +1,6 @@
 import React from 'react';
-import './relatedRow.scss'
+import './relatedRow.scss';
+import StatusChip from '../StatusChip';
 
 const RelatedRow = ({eid, name, created, status, company}) => {
   return (
@@ -11,7 +12,7 @@ const RelatedRow = ({eid, name, created, status, company}) => {
         <p>{name.name}</p>
         <p>{created}</p>
         <p>{company.name}</p>
-        <span>{status}</span>
+        <StatusChip status={status} />
         <button>Action</button>
       </section>
     </>
