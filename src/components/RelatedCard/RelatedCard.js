@@ -23,7 +23,7 @@ const RelatedCard = ({ related }) => (
       {related
         .map(element =>
           <RelatedRow
-            id={element.id}
+            key={element.eid}
             eid={element.eid}
             name={element.country}
             created={element.created}
