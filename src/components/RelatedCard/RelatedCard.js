@@ -10,10 +10,10 @@ const RelatedCard = ({ related }) => (
     </div>
     <table>
       <tr className="header">
-        <div className="row">
+        <th className="row">
           <input type="checkbox" />
-          <th>EID</th>
-        </div>
+          EID
+        </th>
         <th>Country</th>
         <th>Date & Status</th>
         <th>Company</th>

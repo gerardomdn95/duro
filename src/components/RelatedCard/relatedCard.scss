@@ -3,9 +3,13 @@
 .related-card {
   @include card();
   padding: 30px;
+  margin-bottom: 50px;
   .heading {
     display: flex;
     justify-content: space-between;
+    input {
+      margin-top: -1px;
+    }
     button {
       border-radius: 6px;
       color: $checkbox;
@@ -22,15 +26,13 @@
     }
   }
   .header {
-    color: $gray-light
+    color: $gray-light;
+    border: none;
   }
   .related-header {
     margin-bottom: 50px;
   }
   & {
-    table {
-      font-size: 14px;
-    }
     .row {
       display: flex;
       flex-direction: row;
@@ -49,8 +51,21 @@
     }
     table {
       width: 100%;
+      font-size: 14px;
+      border-collapse: collapse;
       tr {
         text-align: left;
+        border: solid;
+        border-color: $checkbox;
+        border-width: 2px 0;
+      }
+      th {
+        padding-bottom: 25px;
+      }
+      td {
+        p {
+          margin: 5px;
+        }
       }
     }
   }
