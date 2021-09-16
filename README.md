@@ -33,6 +33,11 @@ I am a proactive and innovative person, with skills to easily resolve problems, 
    yarn start
    ```
 
+4. Cypress (on a new terminal)
+   ```sh
+   yarn run test
+   ```
+
 <!-- CONTACT -->
 ## Contact
 
