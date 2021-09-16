@@ -23,7 +23,10 @@ const ProductCard = (
       <div className="product-container">
         <ProductImage source={product} color={color} />
         <div className="product-description">
-          <h1>{name}</h1>
+          <div className="heading">
+            <h1>{name}</h1>
+            <button>Approve</button>
+          </div>
           <h3>from {company}</h3>
           <p>{description}</p>
         </div>

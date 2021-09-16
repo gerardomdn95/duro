@@ -4,7 +4,10 @@ import './relatedCard.scss';
 
 const RelatedCard = ({ related }) => (
   <section className="related-card">
-    <h2 className="related-header">Related Products</h2>
+    <div className="heading">
+      <h2 className="related-header">Related Products</h2>
+      <button>New Report</button>
+    </div>
     <table>
       <tr className="header">
         <div className="row">

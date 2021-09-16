@@ -10,6 +10,22 @@
 }
 
 .product-description {
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    button {
+      background: $checkbox;
+      border-radius: 6px;
+      color: $primary;
+      border: none;
+      margin: 5px;
+      width: 150px;
+      &:active {
+        color: $checkbox;
+        background: $primary;
+      }
+    }
+  }
   & {
     h1 {
       font-style: normal;

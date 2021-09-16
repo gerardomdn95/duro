@@ -1,7 +1,6 @@
 @import '../../scss/index.scss';
 
 .row-element {
-  border: solid 5px red;
   .secondary {
     color: $gray-light;
   }
@@ -38,7 +37,11 @@
       border-radius: 6px;
       color: $primary;
       border: none;
-      margin: 5px
+      margin: 5px;
+      &:active {
+        color: $checkbox;
+        background: $primary;
+      }
     }
   }
 }
