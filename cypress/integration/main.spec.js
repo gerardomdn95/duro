@@ -5,10 +5,10 @@
 describe('Duro Challenge', () => {
 
   beforeEach(() => {
-    cy.visit('http://localhost:3000/')
+    cy.visit('http://localhost:3000/');
   });
 
-  it('Has Approve button', () => {
+  it('Has Approve Button', () => {
     cy.contains('Approve')
       .click()
       .and('be.visible');
@@ -36,6 +36,12 @@ describe('Duro Challenge', () => {
 
   it('Has Created By', () => {
     cy.contains('Michael Corr');
+  });
+
+  it('Has New Report Button', () => {
+    cy.contains('New Report')
+      .click()
+      .and('be.visible');
   });
 
   it('Has Status Approved', () => {
