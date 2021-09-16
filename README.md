@@ -1,8 +1,11 @@
 <p align="center">
 
-  <h3 align="center">Duro Challenge</h3>
+  <h1 align="center">Duro Challenge</h1>
+
+  <br />
 
   <p align="center">
+  <img src="https://avatars.githubusercontent.com/u/8991353?v=4" />
     Gerardo Medina Romero
     <br />
     <a href="https://github.com/gerardomdn95"><strong>Github Profile »</strong></a>
