@@ -6,6 +6,7 @@
 
   <p align="center">
   <img src="https://avatars.githubusercontent.com/u/8991353?v=4" />
+    <br />
     Gerardo Medina Romero
     <br />
     <a href="https://github.com/gerardomdn95"><strong>Github Profile »</strong></a>
